@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&T- Auto Sports Cars</title>
+    <!--Carregando o arquivo CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+</head>
+
+<header>
+    <nav class="topnav">
+        <a class="ativo" href="#">Cadastrar</a>
+        <a href="#blog">Historico</a>
+        <a href="#contato">Contato</a>
+        <div class="topnav-right">
+            <a href="#busca">Procurar</a>
+            <a href="#sobre">Sobre</a>
+        </div>
+    </nav>
+    <h1> <img src="images/pngfind.com-carro-png-1302693.png" alt=""> D&T- Auto Sports Cars</h1>
+    <h2>Controle de Estoque</h2>
+    <!--Exemplo de tabela-->
+</header>
+
+<body>
+    <div class="container">
+        <div class="coluna">
+
+            <form action="Formulario">
+
+                <p>Qual a fabricante do Veiculo?</p>
+                <select class="formatacao" name="Qual a fabricante do Veiculo?">
+                    <option value="Selecione">Selecione</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Dodge">Dodge</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Pegeout">Pegeout</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Caoa Cherry">Caoa Cherry</option>
+                    <option value="Crysaler">Crysaler</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Jac">Jac</option>
+                    <option value="Jaguar">Jaguar</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Mercedes-Bens">Mercedes-Bens</option>
+                    <option value="Lamborguhini">Lamborguhini</option>
+                    <option value="Land Rover">Land Rover</option>
+                    <option value="McLaren">McLaren</option>
+                    <option value="Porsche">Porsche</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Yamaha">Yamaha</option>
+                </select> <br>
+
+                <p>Qual modelo do veículo?</p>
+                <input class="formatacao" type="text" required> <br>
+
+                <p>Informe a data de fabricação do veiculo</p>
+                <input type="date"> <br>
+
+                <p>Qual tipo de câmbio?</p>
+                <input type="radio" name="cambio" value="Manual" required> Manual
+                <input type="radio" name="cambio" value="Automatico" required> Automático
+                <br>
+
+                <p>Veiculo blindado?</p>
+                <input type="checkbox" name="blindado" value="sim" required> Sim
+                <br>
+
+                <p>Qual valor do veicuiculo?</p>
+                <input class="formatacao" type="Money" id="valor" required>
+                <br>
+
+                <p>Quantas portas o veiculo?</p>
+                <input class="formatacao" type="number" id="Quantidade_portas" min="1" max="5" placeholder="0"
+                    size="30" required>
+                <br>
+
+                <p> Deseja Incluir novo veiculo?</p>
+                <input type="submit" value="💾 Salvar" class="botaosalvar" required>
+                <input type="reset" value="🗑 Limpar" class="botaoapagar" >
+
+            </form>
+
+        </div>
+
+        <div class="coluna">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="8">Relação de Carros no Estoque</th>
+                    </tr>
+                    <tr>
+                        <th>Foto</th>
+
+                        <th>Fabricante</th>
+
+                        <th>Modelo</th>
+
+                        <th>Ano</th>
+
+                        <th>Câmbio</th>
+
+                        <th>Blindado?</th>
+
+                        <th>R$</th>
+
+                        <th>Opções</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                    <tr>
+                        <td><img src="images/Mustang.jpg" title="Cars" alt="Cars" />
+                        <td>Ford</td>
+                        <td>Mustang Cobra 5.7 V8 (Manual)</td>
+                        <td>1995</td>
+                        <td>Manual</td>
+                        <td>Não</td>
+                        <td class="direita">R$ 52.293,00</td>
+                        <td><input type="submit" value="✏️ editar" class="botaoeditar"><br>
+                            <input type="reset" value=" 🗑 apagar" class="botaoapagar">
+                        </td>
+                    </tr>
+
+                    </tr>
+                    <td><img src="images/DodgeRam.jpg" title="Cars" alt="Cars" />
+                    <td>Dodge</td>
+                    <td>Night Edition 6.7 turbodiesel 4X4</td>
+                    <td>2022</td>
+                    <td>Automático</td>
+                    <td>Não</td>
+                    <td class="direita">R$ 468.912,00</td>
+                    <td><input type="submit" value="✏️ editar" class="botaoeditar"><br>
+                        <input type="reset" value=" 🗑 apagar" class="botaoapagar">
+                    </td>
+                    </td>
+
+                    <tr>
+                        <td><img src="images/Corvette.jpg" title="Cars" alt="Cars" />
+                        <td>Chevrolet</td>
+                        <td>Chevrolet Corvette Targa 5.7</td>
+                        <td>1994</td>
+                        <td>Automático</td>
+                        <td>Não</td>
+                        <td class="direita">R$ 85.890,00</td>
+                        <td><input type="submit" value="✏️ editar" class="botaoeditar"><br>
+                            <input type="reset" value=" 🗑 apagar" class="botaoapagar">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/PumaGts.jpg" title="Cars" alt="Cars" />
+                        <td>Volkswagen</td>
+                        <td>1.6 Coupé 8V Gasolina 2P</td>
+                        <td>1986</td>
+                        <td>Manual</td>
+                        <td>Não</td>
+                        <td class="direita">R$ 58.930,00</td>
+                        <td><input type="submit" value="✏️ editar" class="botaoeditar"><br>
+                            <input type="reset" value=" 🗑 apagar" class="botaoapagar">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/Diplomata1992.jpg" title="Cars" alt="Cars" />
+                        <td>Chevrolet</td>
+                        <td>Diplomata SE 4.1 Collecto</td>
+                        <td>1992</td>
+                        <td>Manual</td>
+                        <td>Não</td>
+                        <td class="direita">R$ 38.362,00</td>
+                        <td><input type="submit" value="✏️ editar" class="botaoeditar"><br>
+                            <input type="reset" value=" 🗑 apagar" class="botaoapagar">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/ChargerV8.jpg" title="Cars" alt="Cars" />
+                        <td>Dodge</td>
+                        <td>Dodge Charger R/T V8 318CC</td>
+                        <td>1975</td>
+                        <td>Manual</td>
+                        <td>Sim</td>
+                        <td class="direita">R$ 98.700,00</td>
+                        <td><input type="submit" value="✏️ editar" class="botaoeditar"><br>
+                            <input type="reset" value=" 🗑 apagar" class="botaoapagar">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/MaverickGt.jpg" title="Cars" alt="Cars" />
+                        <td>Ford</td>
+                        <td>Maverick GT 2.3 4CC</td>
+                        <td>1975</td>
+                        <td>Manual</td>
+                        <td>Não</td>
+                        <td class="direita">R$ 48.000,00</td>
+                        <td><input type="submit" value="✏️ editar" class="botaoeditar"><br>
+                            <input type="reset" value=" 🗑 apagar" class="botaoapagar">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/GolGTI.jpg" title="Cars" alt="Cars" />
+                        <td>Chevrolet</td>
+                        <td>Gol GTi 2.0 2 portas</td>
+                        <td>1989</td>
+                        <td>Manual</td>
+                        <td>Não</td>
+                        <td class="direita">R$ 28.102,00</td>
+                        <td><input type="submit" value="✏️ editar" class="botaoeditar"><br>
+                            <input type="reset" value=" 🗑 apagar" class="botaoapagar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">Total de Carros em Estoque</td>
+                        <td class="direita">8 unid.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br><br><br>
+    <footer> Fatec Itu. Todos os direitos reservados &copy;</footer>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

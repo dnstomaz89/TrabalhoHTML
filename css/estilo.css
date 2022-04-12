@@ -1,0 +1,113 @@
+/*Projeto CSS I */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Rubik+Bubbles&display=swap');
+
+body{
+    font-family:'cursive;ik Bubbles';
+    background-color: #b1dcff62;
+    background-image: url('https://c.wallhere.com/photos/6a/89/audi_r8_sports_car_tuning_front_view_black-577432.jpg!d');
+    color: #ffffff;
+    
+}
+header{
+    background-color: rgb(88, 120, 248);
+    font-family: -apple-system;
+}
+
+table{
+    border: #94cefd;
+    padding: auto;
+}
+
+th{
+    background-color: #2e52f3; /* cor de fundo*/
+    color: #ffffff; /* cor da fonte */
+    padding: 4px; /* margem interna */
+    padding-right: 16px;
+    border: #ffffff;
+}
+
+td{
+   
+    padding: 4px;
+    text-align: left;
+    color: #ffffff;
+
+}
+
+.center {
+    text-align: center;
+}
+.direita{/* Exemplo de Classe CSS */
+    text-align: right;
+
+}
+
+img{
+    width: 100px;
+    border-radius: 100px;
+}
+
+
+.container{
+    display: flex;
+    margin: auto;
+    border-color: #000000;
+}
+.coluna{
+    border: 1px solid #000000;
+    flex: 1;
+    margin: auto;
+}
+.coluna:first-child{
+    margin-right: 24px; 
+}
+.titulo{
+    color: #ffffff; padding: 8px;
+    font-size: large;
+}
+.topnav{
+    background-color: #2e52f3;
+    overflow: hidden; /*se o terxto mnão couber esconde*/
+}
+.topnav a{float: left; color: azure;
+    text-align: center; padding: 16px;
+    text-decoration: none; font-size: 17px;
+}
+.topnav a:hover{
+    background-color: azure; color: black;
+}
+.topnav a.ativo{
+    background-color: #2e52f3; color: azure;
+}
+.topnav-right {
+    float: right;
+}
+
+.botao{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgba(238, 238, 247, 0.918);
+    background-color: #ff0d0d;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-right: 16px;
+    
+}
+.botaoeditar,.botaoapagar{
+    width: 80px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2e52f3;
+    color: #ffffff;
+    text-align: center;
+}
+.formatacao{
+    width: 300px;
+
+}
